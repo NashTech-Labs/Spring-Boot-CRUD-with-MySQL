@@ -1,7 +1,7 @@
-package com.knoldus.springbootcrud.service;
+package com.knoldus.springboot.service;
 
-import com.knoldus.springbootcrud.bean.Subject;
-import com.knoldus.springbootcrud.repository.SubjectRepository;
+import com.knoldus.springboot.bean.Subject;
+import com.knoldus.springboot.repository.SubjectRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -28,7 +28,7 @@ public class SubjectService {
     }
 
     /**
-     * method to add subjets
+     * method to add subjects
      * @param subject the subject
      */
     public void addSubject(Subject subject) {

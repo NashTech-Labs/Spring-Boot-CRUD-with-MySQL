@@ -1,12 +1,12 @@
-package com.knoldus.springbootcrud.controller;
+package com.knoldus.springboot.controller;
 
 import static org.mockito.Mockito.any;
 import static org.mockito.Mockito.doNothing;
 import static org.mockito.Mockito.when;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
-import com.knoldus.springbootcrud.bean.Subject;
-import com.knoldus.springbootcrud.service.SubjectService;
+import com.knoldus.springboot.bean.Subject;
+import com.knoldus.springboot.service.SubjectService;
 
 import java.util.ArrayList;
 

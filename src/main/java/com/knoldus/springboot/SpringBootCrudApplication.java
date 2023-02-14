@@ -1,4 +1,4 @@
-package com.knoldus.springbootcrud;
+package com.knoldus.springboot;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

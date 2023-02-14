@@ -1,4 +1,4 @@
-package com.knoldus.springbootcrud.bean;
+package com.knoldus.springboot.bean;
 
 import javax.persistence.Entity;
 import javax.persistence.Id;
@@ -20,7 +20,7 @@ public class Subject {
 
 
     /**
-     * constuctor Subject
+     * constructor Subject
      */
     public Subject() {
 
@@ -28,8 +28,8 @@ public class Subject {
 
     /**
      * method Subject
-     * @param id
-     * @param name
+     * @param id subject id
+     * @param name subject name
      */
     public Subject(String id, String name) {
         super();
@@ -38,8 +38,8 @@ public class Subject {
     }
 
     /**
-     * method to getid
-     * @return id
+     * method to get id
+     * @return id of subject
      */
     public String getId() {
         return id;

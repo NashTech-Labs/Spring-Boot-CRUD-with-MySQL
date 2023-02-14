@@ -1,4 +1,4 @@
-package com.knoldus.springbootcrud.bean;
+package com.knoldus.springboot.bean;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 

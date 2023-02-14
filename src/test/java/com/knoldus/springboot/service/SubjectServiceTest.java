@@ -1,4 +1,4 @@
-package com.knoldus.springbootcrud.service;
+package com.knoldus.springboot.service;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertTrue;
@@ -8,8 +8,8 @@ import static org.mockito.Mockito.mock;
 import static org.mockito.Mockito.verify;
 import static org.mockito.Mockito.when;
 
-import com.knoldus.springbootcrud.bean.Subject;
-import com.knoldus.springbootcrud.repository.SubjectRepository;
+import com.knoldus.springboot.bean.Subject;
+import com.knoldus.springboot.repository.SubjectRepository;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -29,11 +29,11 @@ class SubjectServiceTest {
     @Test
     void testGetAllSubjects() {
         Iterable<Subject> iterable = (Iterable<Subject>) mock(Iterable.class);
-        doNothing().when(iterable).forEach((java.util.function.Consumer<? super Subject>) any());
+        doNothing().when(iterable).forEach(any());
         when(this.subjectRepository.findAll()).thenReturn(iterable);
         assertTrue(this.subjectService.getAllSubjects().isEmpty());
         verify(this.subjectRepository).findAll();
-        verify(iterable).forEach((java.util.function.Consumer<? super Subject>) any());
+        verify(iterable).forEach(any());
     }
 
     @Test

@@ -1,7 +1,7 @@
-package com.knoldus.springbootcrud.controller;
+package com.knoldus.springboot.controller;
 
-import com.knoldus.springbootcrud.bean.Subject;
-import com.knoldus.springbootcrud.service.SubjectService;
+import com.knoldus.springboot.bean.Subject;
+import com.knoldus.springboot.service.SubjectService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
@@ -10,7 +10,7 @@ import java.util.List;
 @RestController
 public class SubjectController {
     /**
-     * Injecting SubjectService
+     * Injecting Subject Service
      */
     @Autowired
     private SubjectService subjectService;
